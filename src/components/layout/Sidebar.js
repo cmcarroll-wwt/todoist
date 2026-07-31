@@ -8,6 +8,7 @@ import {
 import { Projects } from '../Projects';
 import { useSelectedProjectValue } from '../../context';
 import { AddProject } from '../AddProject';
+import { TaskSummary } from '../TaskSummary';
 
 export const Sidebar = () => {
   const { setSelectedProject } = useSelectedProjectValue();
@@ -96,6 +97,9 @@ export const Sidebar = () => {
           </div>
         </li>
       </ul>
+
+      <TaskSummary />
+
       <div
         className="sidebar__middle"
         aria-label="Show/hide projects"
